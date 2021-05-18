@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: #F29433; padding: 0;">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/"><img src="../assets/dots-logo-1.png" alt="logo" height="60"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/extract">Pedidos</a>
+        </li>
+      </ul>
+      <!-- Espaço para carriho de compras -->
+    </div>
+    <div class="row">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/register">Cadastre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/cart">
+            <img src="../assets/shopping-cart.svg" height="25" style="color: white;" alt="">
+            <!-- <span class="badge bg-danger">{{cartQt.cart}}</span> -->
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

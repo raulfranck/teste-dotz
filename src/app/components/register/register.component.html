@@ -1,0 +1,27 @@
+<div class="container form-container">
+  <form [formGroup]="request" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Usuário</label>
+      <input type="email" class="form-control" formControlName="email" id="emailInput" >
+      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="mb-3">
+      <label for="passwordInput" class="form-label">Senha</label>
+      <input type="password" class="form-control" formControlName="password" id="passwordInput">
+    </div>
+    <div class="mb-3">
+      <label for="passwordInputConfirm" class="form-label">Confirmar</label>
+      <input type="password" class="form-control" formControlName="passwordConfirm" id="passwordInputConfirm">
+    </div>
+    <div class="mb-3">
+      <label for="dotzInput" class="form-label">Dotz iniciais</label>
+      <input type="number" class="form-control" id="dotzInput" formControlName="dotz" aria-describedby="emailHelp">
+      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <!-- <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+    <button type="submit" class="btn btn-warning">Registrar</button>
+  </form>
+</div>

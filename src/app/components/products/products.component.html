@@ -1,0 +1,13 @@
+<div class="container d-flex align-content-start flex-wrap" style="margin-top: 100px;">
+  <div class="card border-warning mb-3 m-2" style="width: 250px; padding: 10px;" *ngFor="let p of products">
+    <img src={{p.photo}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="card-title">{{p.name}}</h6>
+      <div>
+        <h5 class="card-title">{{p.price}}</h5>
+        <img src="../../../assets/logo-moeda.jpg" alt="">
+      </div>
+      <a routerLink="/products" class="btn btn-warning" (click)="addToCart(p.id)">Adicionar</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+div.container {
+  justify-content: center;
+}
+
+div.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+}
+
+div.card img {
+  max-height: 250px;
+  max-width: 100px;
+}
+
+div .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div .card-body div {
+  display: flex;
+  align-items: center;
+}
+
+div .card-body div h5 {
+  padding-top: 5px;
+  margin-right: 8px;
+}
+
+div .card-body div img {
+  width: 25px;
+}
+
+
+@media only screen and (max-width: 980px) {
+  .container {
+    margin-bottom: 150px;
+  }
+}
+
+

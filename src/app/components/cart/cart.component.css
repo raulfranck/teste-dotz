@@ -1,0 +1,45 @@
+div.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container .card {
+  width: 60%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+div.container .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 200px;
+}
+
+div.container .card .card-body div {
+  display: flex;
+  margin-left: 20px;
+}
+
+div.container .card .card-body div img {
+  width: 20%;
+  height: 20px;
+}
+
+
+
+div.container .card img {
+  max-width: 100px;
+  height: 100%;
+}
+
+div.container button {
+  min-width: 100px;
+}

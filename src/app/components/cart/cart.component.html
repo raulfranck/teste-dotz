@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="card border-warning mb-3 m-2" *ngFor="let p of cart[0]; let i=index">
+    <div>
+      <img src={{p.photo}} class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+      <h6 class="card-title">{{p.name}}</h6>
+      <div>
+        <h5 class="card-title">{{p.price}}</h5>
+        <img src="../../../assets/logo-moeda.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <h6>Total: {{priceInt}}</h6>
+  <button (click)="buy()" class="btn btn-warning">Comprar</button>
+
+</div>
+
+
