@@ -15,7 +15,4 @@ export interface Cart {
   price: number;
 }
 
-export interface ChangeSald {
-  dotz: any
-}
 
